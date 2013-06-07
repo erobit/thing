@@ -354,10 +354,3 @@ thing.property('things-cache', {
 });
 
 exports.thing = thing;
-
-thing.create({ }, function (err, thing) {
-	if (err) {
-		throw err;
-	}
-	console.log(JSON.stringify(thing))
-});
