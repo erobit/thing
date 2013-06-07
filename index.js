@@ -1,8 +1,7 @@
 var resource = require('resource'),
     thing = resource.define('thing');
 
-thing.schema.description = 'thing tracker thing'
-// based on https://github.com/garyhodgson/thing-tracker-network/blob/master/specification/schema.js-schema
+thing.schema.description = 'big resource for creating things';
 
 thing.property('version', {
   "type": "number",
@@ -24,7 +23,7 @@ thing.property('trackers-count', {
 });
 
 thing.property('trackers-traversal-depth', {
-  "type":"number"
+  "type": "number"
 });
 
 thing.property('maintainers', {
@@ -44,7 +43,7 @@ thing.property('maintainers', {
         "email": {
           "type": "string"
         },
-        'x-identity-metadata': {
+        "x-identity-metadata": {
         	"type": "object"
         } 
       }
@@ -53,7 +52,7 @@ thing.property('maintainers', {
 });
 
 thing.property('things', {
-	"description": '',
+	"description": "",
 	"properties": {
 		"type": "array",
 		"items": {
@@ -87,7 +86,7 @@ thing.property('things', {
 								"email": {
 									"type": "string"
 								},
-								'x-identity-metadata': {
+								"x-identity-metadata": {
 	        				"type": "object"
 	        			} 
 							}
@@ -110,7 +109,7 @@ thing.property('things', {
 						}
 					}
 				},
-				'thumbnail-urls': {
+				"thumbnail-urls": {
 					"properties": {
 						"type": "array",
 						"items": {
@@ -213,7 +212,7 @@ thing.property('things', {
 						}
 					}
 				},
-				'bill-of-materials': {
+				"bill-of-materials": {
 					"properties": {
 						"type": "array",
 						"items": {
@@ -226,7 +225,7 @@ thing.property('things', {
 									"type": "string"
 								},								
 								"type": {
-									"type": 'generated'
+									"type": "string"
 								},
 								"url": {
 									"type": "string"
@@ -262,7 +261,7 @@ thing.property('things', {
 								"text": {
 									"type": "string"
 								},
-								'image-urls': {
+								"image-urls": {
 									"properties": {
 										"type": "array",
 										"items": {
@@ -286,7 +285,7 @@ thing.property('things', {
 });
 
 thing.property('thing-cache', {	
-	"description": '',
+	"description": "",
 	"properties": {
 		"url": {
 			"type": "string"
