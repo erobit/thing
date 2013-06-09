@@ -2,6 +2,6 @@ var resource = require('resource'),
     schemata = require('./schemata'),
     thing = resource.define('thing');
 
-thing.schema.description = 'big resource for creating things - see thingtracket.net';
 thing.schema = schemata.minimal;
+thing.schema.description =  'a "big framework" resource for creating things - see thingtracker.net'
 exports.thing = thing;
