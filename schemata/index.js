@@ -10,6 +10,7 @@ exports.minimal = {
 			"items": { "type": "string" }
 		},
 		"thumbnailURL": { "type": "string" },
-		"description": { "type": "string" }
+		"description": { "type": "string" },
+		"private": { "type": "boolena", "default": true }
 	}
 }
