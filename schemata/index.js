@@ -11,6 +11,6 @@ exports.minimal = {
 		},
 		"thumbnailURL": { "type": "string" },
 		"description": { "type": "string" },
-		"private": { "type": "boolean", "default": 1 }
+		"private": { "type": "boolean", "default": true }
 	}
 }
