@@ -1,7 +1,7 @@
 var resource = require('resource'),
 		thing = resource.define('thing');
 
-thing.schema.description = 'thing - see thingtracket.net';
+thing.schema.description = 'thing - see thingtracker.net';
 
 thing.property('title', { type: 'string', required: true });
 thing.property('url', { type: 'string', required: true });
